@@ -1,8 +1,11 @@
 <?php
 
-//Adds duynamic title tag support
+
 function blogtemplate_theme_support(){
+  //Adds dynamic title tag support
  add_theme_support('title-tag'); 
+ //add logo from customize 
+ add_theme_support('custom-logo');
 }
 
 add_action('after_setup_theme', 'blogtemplate_theme_support');

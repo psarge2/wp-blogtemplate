@@ -6,6 +6,8 @@ function blogtemplate_theme_support(){
  add_theme_support('title-tag'); 
  //add logo from customize 
  add_theme_support('custom-logo');
+ //add thumbnails to blog posts
+ add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'blogtemplate_theme_support');

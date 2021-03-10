@@ -7,7 +7,20 @@ function blogtemplate_theme_support(){
 
 add_action('after_setup_theme', 'blogtemplate_theme_support');
 
+//MENUS
+function blogtemplate_menus(){
 
+  $locations = array(
+    'primary' => "Desktop Primary Left Sidebar",
+    'footer' => "Footer Menu Items"
+  );
+
+  register_nav_menus($locations);
+}
+
+add_action('init', 'blogtemplate_menus');
+
+//SCRIPTS
 function blogtemplate_register_styles(){
 
   $version = wp_get_theme()->get( 'Version' );

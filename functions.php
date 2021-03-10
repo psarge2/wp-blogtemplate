@@ -1,5 +1,13 @@
 <?php
 
+//Adds duynamic title tag support
+function blogtemplate_theme_support(){
+ add_theme_support('title-tag'); 
+}
+
+add_action('after_setup_theme', 'blogtemplate_theme_support');
+
+
 function blogtemplate_register_styles(){
 
   $version = wp_get_theme()->get( 'Version' );
